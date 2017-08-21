@@ -44,12 +44,12 @@ To create more notification, generally:
 
 1. In index.js, you add your hook and then use parseconfig({configname:'confignamehere', message:'message here'}) to initiate the notification function. 
 ```
-dispatch.hook(packet,'raw' or version,event => {
-    (function and ifs and what nots here if needed) { //this part is as how you would filter out the conditions to warn you
+dispatch.hook(packet,'raw' or version,event => {      //Regular hookin stuffs, use raw if you dont need to filter events out
+    (function and ifs and what nots here if needed) { //This part is as how you would filter out the conditions to warn you
         .......                                       //For example, to hook event.type and only notify if its 4 or smth
         
         parseconfig({                                //This part is the one that triggers notification. parseconfig is an object with 2 needed property, configname and message.
-			    configname: 'confignamehere',                 //this name corresponds to the name in config.js
+			configname: 'confignamehere',               //This name corresponds to the name in config.js
 		    	message:'[name] event type is '+event.type  //This message is the one dispalyed in notification. you can use event.xxxxx here easily
 		    })
          
