@@ -20,7 +20,7 @@ module.exports = {
 		timeout:60000
 	},
 	
-	incombat:{ //Notify when you are suddenly in combat
+	incombat:{ //Notify when you are suddenly in combat (Useful for pvp server?)
 		enable:false,
 		afknotify:true,
 		timeout:120000
@@ -42,6 +42,12 @@ module.exports = {
 		enable:true,
 		afknotify:true,
 		timeout:60000
+	},
+	
+	lfgrequest:{ //notify when someone wants to join your lfg party
+		enable:true,
+		afknotify:true,
+		timeout:30000
 	},
 	
 	test:{ //debugging testing function
