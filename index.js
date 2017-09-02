@@ -54,6 +54,15 @@ module.exports = function afknotify(dispatch) {
 					message:'[Request Trade]\n'+event.senderName+' wants to trade'
 				})
 				break
+				
+			case 4: //party
+				parseconfig({
+					
+					configname:'party',
+					message:'[Request Party]\n'+event.senderName+' wants to party'
+				})	
+				break
+				
 			case 11: //Duel
 				parseconfig({
 					
@@ -64,12 +73,12 @@ module.exports = function afknotify(dispatch) {
 		}
 	})
 	
-	//Party Request (party)
-	dispatch.hook('S_BEGIN_THROUGH_ARBITER_CONTRACT', 1, event => {
-		if(event.type===4) parseconfig({
+	//Party Request (party) Not sure about this yet
+	dispatch.hook('S_OTHER_USER_APPLY_PARTY', 1, event => {
+		parseconfig({
 			
-			configname:'party',
-			message:'[Request Party]\n'+event.sender+' wants to party'
+			configname:'lfgrequest',
+			message:'[LFG Request]\n'+event.name+' wants to join'
 		})
 	})
 
