@@ -11,7 +11,7 @@ See the readme in https://github.com/SerenTera/tera-notifier if you need an exam
 - `afk`: toggles the enable/disable of this module
 
 ## index.js
-In index.js, `const chat_term=` can be found at the top. This option allows you to scan for this word in chat and notify you if it appears while you are afk. Set `chatcheckterm` to be enabled if you use this. 
+In index.js, `const chat_term=` can be found at the top. This option allows you to scan for this word in chat and notify you if it appears while you are afk. Set `chatcheckterm` in config.js to be enabled if you use this. 
 	
 ## config
 In config.js you can change various notifiers, such as ims, party,whisper etc etc. Refer to the comments in config.js to set your own.
