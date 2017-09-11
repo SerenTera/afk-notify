@@ -44,13 +44,26 @@ module.exports = {
 		timeout:60000
 	},
 	
-	lfgrequest:{ //notify when someone wants to join your lfg party
+	lfgrequest:{ //notify when someone wants to join your lfg party. Unsure for now. Maybe whisper packet is used instead.
 		enable:true,
 		afknotify:true,
 		timeout:30000
 	},
 	
-	test:{ //debugging testing function
+	chatcheckterm:{ //notify when someone mentioned the word assigned to 'chat_term' in index.js. Only set to true if you add such a word.
+		enable:false,
+		afknotify:true,
+		timeout:60000
+	},
+	
+	chatcheckname:{ //notify when someone mentioned your ign in chat. Set to false if you use dictionary name(ie. commonly used words)
+		enable:true,
+		afknotify:true,
+		timeout:60000
+	},
+	
+	
+	test:{ //debugging testing function. Don't touch
 		enable:false,
 		afknotify:true,
 		timeout:10000
