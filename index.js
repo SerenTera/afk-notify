@@ -5,14 +5,15 @@ const Command = require('command'),
 //Defaults
 let enabled=true,				//Default enabling of module.
 	soundId='Notification.IM'	//Use true for default windows notification sound. Or use false for silence. For more, read: http://msdn.microsoft.com/en-us/library/windows/apps/hh761492.aspx
-
-	
-	
+		
+const chat_term=''	 			//Put your name(in lower case!) that people always use to call you so notification will be enabled when someone say it in chat 	
+		
 module.exports = function afknotify(dispatch) {
 	const command = Command(dispatch),
-		  notifier = new Notifier(dispatch)
+		  notifier = Notifier(dispatch)
 		  
-	let cid
+	let cid,
+		playerName
 	
 	/////Command
 	command.add('afk', () => {
@@ -22,7 +23,8 @@ module.exports = function afknotify(dispatch) {
 	
 	/////Dispatches
 	dispatch.hook('S_LOGIN', 2, event => {
-		cid = event.cid
+		cid = event.cid,
+		playerName = event.name.toLowerCase()
 	})
 	
 	
@@ -91,13 +93,23 @@ module.exports = function afknotify(dispatch) {
 		})
 	})
 	
-	//Test (test)
-	/*dispatch.hook('C_CHAT', 1, event => {
-		parseconfig({
-			configname:'test',
-			message:'[Message]\n'+event.message
-		})
-	})*/
+	//Chat notification
+	dispatch.hook('S_CHAT', 1, event => {
+		if(event.message.toLowerCase().includes(chat_term)) {
+			parseconfig({
+				configname:'chatcheckterm',
+				message:'[Chat Mention] '+event.authorName+'\n'+event.message
+			})
+		}
+		
+		if(event.message.toLowerCase().includes(playerName)) {
+			parseconfig({
+				configname:'chatcheckname',
+				message:'[Chat Mention] '+event.authorName+'\n'+event.message
+			})
+		}
+	})
+	
 	
 	
 	/////Functions
