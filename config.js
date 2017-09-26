@@ -45,7 +45,7 @@ module.exports = {
 	},
 	
 	lfgrequest:{ //notify when someone wants to join your lfg party. Unsure for now. Maybe whisper packet is used instead.
-		enable:true,
+		enable:false,
 		afknotify:true,
 		timeout:30000
 	},
