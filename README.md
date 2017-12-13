@@ -1,6 +1,8 @@
 # afk-notify
 A tera-proxy module that uses tera-notifier to push windows notification when various ingame event happens (eg: ims party found, someone metioned you in chat while you afk, etc..)
 
+Update: If you updated win10 recently to Fall creators update, update tera-notifier: https://github.com/SerenTera/tera-notifier
+
 Requires: 
 - Commands module by Pinkie-Pie
 - tera-notifier: https://github.com/SerenTera/tera-notifier
