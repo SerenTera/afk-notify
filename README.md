@@ -5,6 +5,7 @@ A tera-proxy module that uses tera-notifier to push windows notification when va
 - If you updated win10 recently to Fall creators update, update tera-notifier: https://github.com/SerenTera/tera-notifier
 
 - Will do a configuration file soon, disable updates if needed
+
 Requires: 
 - Commands module by Pinkie-Pie
 - tera-notifier: https://github.com/SerenTera/tera-notifier
