@@ -5,7 +5,7 @@
         "module.json": "6979aff7aee7237d2ba8c3293b265f310975fbc254cadb6aa2d57e4cb648e1bc"
     },
     "defs": {
-        "S_LOGIN": 67,
+        "S_LOGIN": [9,10],
         "S_REQUEST_CONTRACT": 1,
         "S_OTHER_USER_APPLY_PARTY": 1,
         "S_USER_STATUS": 1,
