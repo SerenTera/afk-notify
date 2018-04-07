@@ -22,14 +22,13 @@ module.exports = function afknotify(dispatch) {
 	})
 	
 	/////Dispatches
-	dispatch.hook('S_LOGIN', dispatch.base.majorPatchVersion >= 67 ? 10 : 9, event => {
+	dispatch.hook('S_LOGIN',dispatch.base.majorPatchVersion >= 67 ? 10 : 9, event => {
 		cid = event.gameId,
 		playerName = event.name.toLowerCase()
 	})
 	
 	
 	//Instance Match (ims)
-	
 	dispatch.hook('S_FIN_INTER_PARTY_MATCH', 'raw', () => { 
 		parseconfig({ 
 		
@@ -39,7 +38,6 @@ module.exports = function afknotify(dispatch) {
 	})
 	
 	//Whispers (whisper)
-	
 	dispatch.hook('S_WHISPER', 2, event => { 
 		if(event.authorName.toLowerCase()===playerName) return
 		parseconfig({
