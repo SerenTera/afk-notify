@@ -1,14 +1,14 @@
 {
     "files": {
         "config.js": "2a13290597faf9fc43b4d3d34185637cd7605d4ff0becae1950adfa93b737d69",
-        "index.js": "f2c8f088f3f91bbe6b8eea740e8332c9ffa6de97354dfe2710323af70ae67290"
+        "index.js": "eea2d39ba01ebcc9afed7548392fd7da6daa965137a2da306992e988cd594b37",
+        "module.json": "6979aff7aee7237d2ba8c3293b265f310975fbc254cadb6aa2d57e4cb648e1bc"
     },
     "defs": {
-        "S_LOGIN": [9,10],
+        "S_LOGIN": 67,
         "S_REQUEST_CONTRACT": 1,
         "S_OTHER_USER_APPLY_PARTY": 1,
         "S_USER_STATUS": 1,
-        "S_CHAT": 2,
-        "S_WHISPER":2
+        "S_CHAT": 2
     }
 }
