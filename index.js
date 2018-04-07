@@ -21,7 +21,18 @@ module.exports = function afknotify(dispatch) {
 		command.message( enabled ? '(AFK Notify) Enabled' : '(AFK Notify) Disabled')
 	})
 	
+	
+	
 	/////Dispatches
+	dispatch.hook('C_CHECK_VERSION','raw', () => {
+		if(dispatch.base.protocolVersion) hook()
+		else {
+			console.log('Protocol Version not found, Restart everything again then holler for help~')
+		}
+	})
+	
+	function hook() {
+		
 	dispatch.hook('S_LOGIN',dispatch.base.majorPatchVersion >= 67 ? 10 : 9, event => {
 		cid = event.gameId,
 		playerName = event.name.toLowerCase()
@@ -115,7 +126,7 @@ module.exports = function afknotify(dispatch) {
 		}
 	})
 	
-	
+	}
 	
 	/////Functions
 	function parseconfig(set) {

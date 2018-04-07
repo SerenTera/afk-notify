@@ -1,10 +1,10 @@
 {
     "files": {
         "config.js": {
-            "overwrite": false,
-            "hash":"2a13290597faf9fc43b4d3d34185637cd7605d4ff0becae1950adfa93b737d69"
-        },
-        "index.js": "391bfa5e3afc8e7d488d628babdc5693398d7ea9c1d030e9dcff73e80ec66c9b",
+			"overwrite": false,
+			"hash" : "2a13290597faf9fc43b4d3d34185637cd7605d4ff0becae1950adfa93b737d69"
+		},
+        "index.js": "11f790187ecfaa28ca609a9956bdb0bb660c5492c25f6c111f71c720c71749cc",
         "module.json": "6979aff7aee7237d2ba8c3293b265f310975fbc254cadb6aa2d57e4cb648e1bc"
     },
     "defs": {
@@ -13,6 +13,6 @@
         "S_OTHER_USER_APPLY_PARTY": 1,
         "S_USER_STATUS": 1,
         "S_CHAT": 2,
-        "S_WHISPER": 2
+		"S_WHISPER": 2
     }
 }
