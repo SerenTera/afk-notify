@@ -4,7 +4,7 @@ A tera-proxy module that uses tera-notifier to push windows notification when va
 ## Updates
 - If you updated win10 recently to Fall creators update, update tera-notifier: https://github.com/SerenTera/tera-notifier
 
-- Will do a configuration file soon, disable updates if needed
+- config.js is updated recently (22/08/2018). Delete old file for new config file if you need it.
 
 Requires: 
 - Commands module by Pinkie-Pie
@@ -14,6 +14,7 @@ See the readme in https://github.com/SerenTera/tera-notifier if you need an exam
 
 ## Commands 
 - `afk`: toggles the enable/disable of this module
+- `afk test`: Tests the notification
 
 ## index.js
 In index.js, `const chat_term=` can be found at the top. This option allows you to scan for this word in chat and notify you if it appears while you are afk. Set `chatcheckterm` in config.js to be enabled if you use this. 
