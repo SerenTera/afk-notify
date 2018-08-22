@@ -1,3 +1,7 @@
 {
+	"disableAutoUpdate": false,
+	"options": {
+		"niceName":"Afk Notify"
+	},
     "servers": ["https://raw.githubusercontent.com/SerenTera/afk-notify/master/"]
 }

@@ -14,6 +14,12 @@ module.exports = {
 		timeout:15000
 	},
 	
+	bgmatched: { //Bgs Ready notification: Notify if battleground matching system matched you. 
+        enable: true,
+        afknotify: false, 
+        timeout: 15000
+    },
+	
 	whisper:{ //Notify whenever someone whispers you
 		enable:true,
 		afknotify:true,
@@ -44,6 +50,24 @@ module.exports = {
 		timeout:60000
 	},
 	
+	friendsummon: { //notify when some friend tries to summon you
+        enable: true,
+        afknotify: true,
+        timeout: 20000
+    },
+
+    deathmatch: { //notify when someone ask for deathmatch
+        enable: true,
+        afknotify: true,
+        timeout: 60000
+    },
+
+    partysum: { //notify when some friend tries to summon you via party-summon
+        enable: true,
+        afknotify: true,
+        timeout: 10000
+    },
+	
 	lfgrequest:{ //notify when someone wants to join your lfg party. Unsure for now. Maybe whisper packet is used instead.
 		enable:false,
 		afknotify:true,
@@ -61,8 +85,7 @@ module.exports = {
 		afknotify:true,
 		timeout:60000
 	},
-	
-	
+
 	test:{ //debugging testing function. Don't touch
 		enable:false,
 		afknotify:true,

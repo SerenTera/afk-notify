@@ -1,18 +1,21 @@
 {
-    "files": {
-        "config.js": {
-			"overwrite": false,
-			"hash":"2a13290597faf9fc43b4d3d34185637cd7605d4ff0becae1950adfa93b737d69"
-			},
-        "index.js": "d003936a31ba6554722083cd24406eda3c4173439f28f541d028565250b63bc5",
-        "module.json": "6979aff7aee7237d2ba8c3293b265f310975fbc254cadb6aa2d57e4cb648e1bc"
-    },
-    "defs": {
-        "S_LOGIN": 10,
-        "S_REQUEST_CONTRACT": 1,
-        "S_OTHER_USER_APPLY_PARTY": 1,
-        "S_USER_STATUS": 1,
-        "S_CHAT": 2,
+	"files": {
+		"config.js": {
+			"hash":"a4231824bacf7c09fa3d74f791f695bf07e0a23707c643fe35346700c5ef8e91",
+			"overwrite": false
+		},
+		"index.js": "e130032b22b86e4d8041d6451b78bcdc209b3c90a967c506b531ed15b323e5b2",
+		"module.json": "aeb717e8ff260b84e7d68839e1699d680c0b531ceb35b09e1e57d1782179d3f8"
+	},
+	"defs": {
+		"S_ASK_TELEPORT": 1,
+		"S_BEGIN_THROUGH_ARBITER_CONTRACT": 1,
+		"S_CHAT": 2,
+		"S_FIN_INTER_PARTY_MATCH": "raw",
+		"S_LOGIN": 10,
+		"S_OTHER_USER_APPLY_PARTY": 1,
+		"S_REQUEST_CONTRACT": 1,
+		"S_USER_STATUS": 1,
 		"S_WHISPER": 2
-    }
+	}
 }
