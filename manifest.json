@@ -1,14 +1,15 @@
 {
 	"files": {
 		"config.js": {
-			"hash":"a4231824bacf7c09fa3d74f791f695bf07e0a23707c643fe35346700c5ef8e91",
+			"hash": "a4231824bacf7c09fa3d74f791f695bf07e0a23707c643fe35346700c5ef8e91",
 			"overwrite": false
 		},
-		"index.js": "e130032b22b86e4d8041d6451b78bcdc209b3c90a967c506b531ed15b323e5b2",
+		"index.js": "6214c743c8690b9fe9ff27997ae55662f57c9e7a912aadf7604d7394926a35b1",
 		"module.json": "91ba781362e6a2bf963d9a483371f8cb1f52a5426d61f35f16405e071dd8e4f0"
 	},
 	"defs": {
 		"S_ASK_TELEPORT": 1,
+		"S_BATTLE_FIELD_ENTRANCE_INFO": "raw",
 		"S_BEGIN_THROUGH_ARBITER_CONTRACT": 1,
 		"S_CHAT": 2,
 		"S_FIN_INTER_PARTY_MATCH": "raw",

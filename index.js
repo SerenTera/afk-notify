@@ -171,7 +171,7 @@ module.exports = function afknotify(mod) {
 	
 	/////Functions
 	function parseconfig(set) {
-		if(config[set.configname]) return;
+		if(!config[set.configname]) return;
 		if(config[set.configname].enable && enabled) {
 			
 			config[set.configname].afknotify ? notificationafk(set.message,config[set.configname].timeout): notification(set.message)
