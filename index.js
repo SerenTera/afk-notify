@@ -123,8 +123,8 @@ module.exports = function afknotify(mod) {
 	
 	
 	//Combat status changed (incombat)
-	mod.hook('S_USER_STATUS', 1, event => {
-		if(event.target.equals(cid) && event.status === 1) parseconfig({
+	mod.hook('S_USER_STATUS', 2, event => {
+		if(event.gameId.equals(cid) && event.status === 1) parseconfig({
 	
 			configname:'incombat',
 			message:'[Combat]\nYou are in combat'
@@ -150,13 +150,13 @@ module.exports = function afknotify(mod) {
 		}
 	})
 	
-	//Teleport Request
+	/*//Teleport Request
 	mod.hook('S_ASK_TELEPORT', 1, event => {
 		parseconfig({
             configname: 'partysum',
             message: '[Request Party Summon]\n' + event.name + ' wants to summon you'
         })
-	})
+	})*/
 	
 	
 	//BG matching

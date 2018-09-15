@@ -4,11 +4,10 @@
 			"hash": "a4231824bacf7c09fa3d74f791f695bf07e0a23707c643fe35346700c5ef8e91",
 			"overwrite": false
 		},
-		"index.js": "6214c743c8690b9fe9ff27997ae55662f57c9e7a912aadf7604d7394926a35b1",
+		"index.js": "99b2791209b4127779deeee398f78069bd805cfb249726b5993de017fed54537",
 		"module.json": "91ba781362e6a2bf963d9a483371f8cb1f52a5426d61f35f16405e071dd8e4f0"
 	},
 	"defs": {
-		"S_ASK_TELEPORT": 1,
 		"S_BATTLE_FIELD_ENTRANCE_INFO": "raw",
 		"S_BEGIN_THROUGH_ARBITER_CONTRACT": 1,
 		"S_CHAT": 2,
@@ -16,7 +15,7 @@
 		"S_LOGIN": 10,
 		"S_OTHER_USER_APPLY_PARTY": 1,
 		"S_REQUEST_CONTRACT": 1,
-		"S_USER_STATUS": 1,
+		"S_USER_STATUS": 2,
 		"S_WHISPER": 2
 	}
 }
