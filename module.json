@@ -1,7 +1,14 @@
 {
 	"disableAutoUpdate": false,
+    "name": "afk-notify",
+	"author": "Seren",
+	"description": "Alerts users during certain ingame events, using windows notification",
+	"version": "1.0.0",
 	"options": {
 		"niceName":"Afk Notify"
 	},
-    "servers": ["https://raw.githubusercontent.com/SerenTera/afk-notify/master/"]
+    "servers": ["https://raw.githubusercontent.com/SerenTera/afk-notify/master/"],
+	"dependencies": {
+		"tera-notifier":"https://raw.githubusercontent.com/SerenTera/tera-notifier/master/module.json"
+	}
 }

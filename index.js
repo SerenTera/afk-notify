@@ -1,5 +1,5 @@
-const Notifier = require('tera-notifier'),
-	  config = require('./config')
+'use strict'
+const config = require('./config')
 	  
 //Defaults
 let enabled=true,				//Default enabling of module.
@@ -8,7 +8,7 @@ let enabled=true,				//Default enabling of module.
 const chat_term=''	 			//Put your name(in lower case!) that people always use to call you so notification will be enabled when someone say it in chat 	
 		
 module.exports = function afknotify(mod) {
-	const notifier = Notifier(mod)
+	const notifier = mod.require.tera-notifier
 		  
 	let cid,
 		playerName
@@ -124,7 +124,7 @@ module.exports = function afknotify(mod) {
 	
 	//Combat status changed (incombat)
 	mod.hook('S_USER_STATUS', 2, event => {
-		if(event.gameId.equals(cid) && event.status === 1) parseconfig({
+		if(event.gameId===cid && event.status === 1) parseconfig({
 	
 			configname:'incombat',
 			message:'[Combat]\nYou are in combat'
