@@ -1,5 +1,5 @@
 {
-	"disableAutoUpdate": true,
+	"disableAutoUpdate": false,
     "name": "afk-notify",
 	"author": "Seren",
 	"description": "Alerts users during certain ingame events, using windows notification",
