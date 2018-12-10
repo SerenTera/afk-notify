@@ -4,8 +4,8 @@
 			"hash": "a4231824bacf7c09fa3d74f791f695bf07e0a23707c643fe35346700c5ef8e91",
 			"overwrite": false
 		},
-		"index.js": "99b2791209b4127779deeee398f78069bd805cfb249726b5993de017fed54537",
-		"module.json": "91ba781362e6a2bf963d9a483371f8cb1f52a5426d61f35f16405e071dd8e4f0"
+		"index.js": "400a6efac6212ee541ba090d54a4dd91607dbe0e564671bcbffaeae2170516a7",
+		"module.json": "6a13025b08a06c0468e005fdec448d85ccc1937b8f682635fed3624ef8e06621"
 	},
 	"defs": {
 		"S_BATTLE_FIELD_ENTRANCE_INFO": "raw",
