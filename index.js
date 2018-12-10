@@ -8,7 +8,7 @@ let enabled=true,				//Default enabling of module.
 const chat_term=''	 			//Put your name(in lower case!) that people always use to call you so notification will be enabled when someone say it in chat 	
 		
 module.exports = function afknotify(mod) {
-	const notifier = require('../tera-notifier')
+	const notifier = mod.require ? mod.require.notifier : require('tera-notifier')
 		  
 	let cid,
 		playerName

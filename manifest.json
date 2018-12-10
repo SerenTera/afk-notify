@@ -1,10 +1,10 @@
 {
 	"files": {
 		"config.js": {
-			"hash": "a4231824bacf7c09fa3d74f791f695bf07e0a23707c643fe35346700c5ef8e91",
-			"overwrite": false
+			"hash":"a4231824bacf7c09fa3d74f791f695bf07e0a23707c643fe35346700c5ef8e91",
+			"overwrite":false
 		},
-		"index.js": "400a6efac6212ee541ba090d54a4dd91607dbe0e564671bcbffaeae2170516a7",
+		"index.js": "eef8cdd3f2d3ff9b99201015a900a3bbc83c2fa69b3292a3087c1a15a5752242",
 		"module.json": "0ced0ac875560a3de1fd300758e37749065ce258cb2bbb0f3bd8b15f17966aa2"
 	},
 	"defs": {
