@@ -32,9 +32,9 @@ module.exports = function afknotify(mod) {
 	
 	/////Dispatches
 
-	mod.hook('S_LOGIN',10, event => {
-		cid = event.gameId,
-		playerName = event.name.toLowerCase()
+	mod.game.on('enter_game', () => {
+		cid = mod.game.me.gameId,
+		playerName = mod.game.me.name.toLowerCase()
 	})
 	
 	
@@ -123,7 +123,7 @@ module.exports = function afknotify(mod) {
 	
 	
 	//Combat status changed (incombat)
-	mod.hook('S_USER_STATUS', 2, event => {
+	mod.hook('S_USER_STATUS', 3, event => {
 		if(event.gameId===cid && event.status === 1) parseconfig({
 	
 			configname:'incombat',
@@ -160,7 +160,7 @@ module.exports = function afknotify(mod) {
 	
 	
 	//BG matching
-	mod.hook('S_BATTLE_FIELD_ENTRANCE_INFO', 'raw', event => {
+	mod.hook('S_BATTLE_FIELD_ENTRANCE_INFO', 'raw', () => {
 		parseconfig({
             configname: 'bgmatched',
             message: '[Battleground Match] Ready'

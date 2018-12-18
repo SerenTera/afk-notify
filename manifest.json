@@ -1,10 +1,10 @@
 {
 	"files": {
 		"config.js": {
-			"hash": "a4231824bacf7c09fa3d74f791f695bf07e0a23707c643fe35346700c5ef8e91",
+			"hash":"a4231824bacf7c09fa3d74f791f695bf07e0a23707c643fe35346700c5ef8e91",
 			"overwrite": false
 		},
-		"index.js": "435920e78bb67cec39a5dd9d950133e1f3c4c60d41267c618ccd0738eb2fb9d9",
+		"index.js": "aac3d8e6dab195d23fa7d325354fe6c91a4db00dde976c9ef2c734fcf24e8d1d",
 		"module.json": "f506149903c95423477ef89c3f765e8c800d9e730f43f8e830093b816b195eab"
 	},
 	"defs": {
@@ -12,10 +12,9 @@
 		"S_BEGIN_THROUGH_ARBITER_CONTRACT": 1,
 		"S_CHAT": 2,
 		"S_FIN_INTER_PARTY_MATCH": "raw",
-		"S_LOGIN": 10,
 		"S_OTHER_USER_APPLY_PARTY": 1,
 		"S_REQUEST_CONTRACT": 1,
-		"S_USER_STATUS": 2,
+		"S_USER_STATUS": 3,
 		"S_WHISPER": 2
 	}
 }
