@@ -175,6 +175,8 @@ module.exports = function afknotify(mod) {
 		if(config[set.configname].enable && enabled) {
 			
 			config[set.configname].afknotify ? notificationafk(set.message,config[set.configname].timeout): notification(set.message)
+			
+			console.log(set.message.replace('\n',' '))
 		}
 	}
 	
