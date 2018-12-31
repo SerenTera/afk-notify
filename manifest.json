@@ -1,11 +1,10 @@
 {
 	"files": {
-		"config.js": {
-			"hash": "a4231824bacf7c09fa3d74f791f695bf07e0a23707c643fe35346700c5ef8e91",
-			"overwrite": false
-		},
-		"index.js": "ab75e2421b00940dcf6b096d953ed5e259174ff2bef3a7610f3e3387a02ffdda",
-		"module.json": "f506149903c95423477ef89c3f765e8c800d9e730f43f8e830093b816b195eab"
+		"config - Copy.js": "a4231824bacf7c09fa3d74f791f695bf07e0a23707c643fe35346700c5ef8e91",
+		"config.js": "a4231824bacf7c09fa3d74f791f695bf07e0a23707c643fe35346700c5ef8e91",
+		"index.js": "a1cced86762156e41cf933c68ecf1f8b0bd715bbf653b74c9aa41188218c612d",
+		"module.json": "4170d89bc5fecbae0737b50fc1f40686c5d90560f9d2a073addf9042bb9427f0",
+		"settings_migrator.js": "1d4cbc95b2bc208401775423f7afff622cb19313a5e4b9887a3d15b6bc6a0187"
 	},
 	"defs": {
 		"S_BATTLE_FIELD_ENTRANCE_INFO": "raw",
