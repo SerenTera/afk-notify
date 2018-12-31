@@ -24,10 +24,10 @@ Config is in `config.json`. Main configuration are as follows:
 
 In config.js you can also enable and change various notifiers, such as ims, party, whisper, etc. Refer to `notifiers type` below!
 
-In each of the main config, the options are:
+In each of the main config, the options are (remember to use strings for `notify `and `afk`):
 - `false`: This will disable that notifier
-- `notify`: This will enable and always notify for that notifier
-- `afk`: This will enable and ONLY notify when user is detected to be afk from TERA
+- `"notify"`: This will enable and always notify for that notifier
+- `"afk"`: This will enable and ONLY notify when user is detected to be afk from TERA
 
 ## Notifier Types
 The following are the types of notifiers available for the default of this module.
