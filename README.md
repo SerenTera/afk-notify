@@ -2,9 +2,8 @@
 A tera-proxy module that uses tera-notifier to push windows notification when various ingame event happens (eg: ims party found, someone metioned you in chat while you afk, etc..)
 
 ## Updates
-- If you updated win10 recently to Fall creators update, update tera-notifier: https://github.com/SerenTera/tera-notifier
-
-- config.js is updated recently (22/08/2018). Delete old file for new config file if you need it.
+- New configuration file is in config.json!
+- To change config, use: 'false' to disable notif, 'notify' to always enable and 'afk' to only notify when you are afk.
 
 Requires: 
 - Commands module by Pinkie-Pie
@@ -15,38 +14,35 @@ See the readme in https://github.com/SerenTera/tera-notifier if you need an exam
 ## Commands 
 - `afk`: toggles the enable/disable of this module
 - `afk test`: Tests the notification
-
-## index.js
-In index.js, `const chat_term=` can be found at the top. This option allows you to scan for this word in chat and notify you if it appears while you are afk. Set `chatcheckterm` in config.js to be enabled if you use this. 
 	
-## config
-In config.js you can change various notifiers, such as ims, party,whisper etc etc. Refer to the comments in config.js to set your own.
+## Config
+Config is in `config.json`. Main configuration are as follows:
+- `enable` : Enables or disable the module. Put true or false.
+- `soundId`: The sound file to use. For a list, Refer to [this link](https://docs.microsoft.com/en-us/previous-versions/windows/apps/hh761492(v=win.10))
+- `log` : Enable this to display logs of previous notification sent to windows in command prompt. Put true or false.
+- `chatTerm` : Put a string in here to look out for in your chats.
 
-There are 3 properties/options per notifier:
-- enable: this sets whether to enable/disable this notifier. True to enable
-- afknotify: this sets whether to notify only if you are detected to be afk. True to enable only afk notification. False will notify everytime the event is proc-ed
-- timeout: this is the time in milsec to detect if you are afk or not. If the amount of timeout passes and the user has not done any of the detected stuff (chatting,moving,using skills,using broker etc..),  then notification will start to be pushed if the described ingame events happens.
+In config.js you can also enable and change various notifiers, such as ims, party, whisper, etc. Refer to `notifiers type` below!
 
-## Example
-One of the notifier in config.js is:
-```
-ims:{ //IMS Ready notification: Notify if you have been matched to an instance via ims. 
-		enable:true,
-		afknotify:false, //You can set afknotify to false to notify you everytime if you always afk while imsing like me :D
-		timeout:15000
-	},
-```
-As seen from above, when instance matched is completed and you are matched to a dungeon, this notifier will push a windows notification irregardless of whether you are afk or not. To push only if you are afk, put afknotify to true and the mod will only notify if you are afk for more than 15000ms or 15sec.
+In each of the main config, the options are:
+- `false`: This will disable that notifier
+- `notify`: This will enable and always notify for that notifier
+- `afk`: This will enable and ONLY notify when user is detected to be afk from TERA
 
-Another example is 
-```
-incombat:{ //Notify when you are suddenly in combat
-		enable:false,  //set this to true to enable
-		afknotify:true,
-		timeout:120000
-	},
-```
-When you are afk for more than 120000ms (2minutes), then this module will notify you if you got attacked and becomes incombat. This is disabled by default, so enable on your own if u wish in config.js by setting incombat>enable to true.
+## Notifier Types
+The following are the types of notifiers available for the default of this module.
+- `ims`: IMS Ready notification. Notify if you have been matched to an instance via ims.
+- `bgmatched`: Bgs Ready notification. Notify if battleground matching system matched you.
+- `whisper`: Notify when someone whispers you.
+- `incombat`: Notify when you are suddenly in combat (Useful for pvp server?).
+- `trade`: Notify when someone trades you.
+- `duel`: Notify when someone ask for a duel.
+- `party`: Notify when someone parties you.
+- `friendsummon`: Notify when a friend tries to summon you.
+- `deathmatch`: Notify when someone ask for a deathmatch.
+- `lfgrequest`: Notify when someone wants to join your lfg party. Unsure for now. Maybe whisper packet is used instead.
+- `chatcheckterm`: Notify when someone mentioned the word assigned to 'chatTerm' in config. Only set to notify if you add such a word.
+- `chatcheckname`: Notify when someone mentioned your ign in chat. Set to false if you use dictionary name (ie. commonly used words).
 
 ## Creating additional notification
 To create more notification, generally:
@@ -65,17 +61,7 @@ dispatch.hook(packet,'raw' or version,event => {      //Regular hookin stuffs, u
       }  //Remember to close your brackets! :)
   })    
 ```
-2. In config.js, add your config name object with the 3 properties
+2. In config.json, add your config name object with one of the 3 properties
 ```
-confignamehere:{ //Description if needed
-		enable:true,         //enable or disable
-		afknotify:true,     //true to use afknotify, false to use notify (notifies without checking afk status)
-		timeout:60000       //afk timeout duration. Not doing most ingame stuff for 60000ms in this example will start notifying user of event if it happens.
-	},
+"confignamehere": "notify" 
 ```
-## TOdo
-- debugs if needed
-- add more function?
-
-## Additional notes
-This module as well as tera-notifier is very new and thus I do not know of the impact on the performance of tera if you use this. As far as I know, there should not be major impacts to the performance. If so, please cease use of both this module and tera-notifier
