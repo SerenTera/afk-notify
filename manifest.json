@@ -1,17 +1,17 @@
 {
-	"files": {
-		"index.js": "a1cced86762156e41cf933c68ecf1f8b0bd715bbf653b74c9aa41188218c612d",
-		"module.json": "4170d89bc5fecbae0737b50fc1f40686c5d90560f9d2a073addf9042bb9427f0",
-		"settings_migrator.js": "1d4cbc95b2bc208401775423f7afff622cb19313a5e4b9887a3d15b6bc6a0187"
-	},
-	"defs": {
-		"S_BATTLE_FIELD_ENTRANCE_INFO": "raw",
-		"S_BEGIN_THROUGH_ARBITER_CONTRACT": 1,
-		"S_CHAT": 2,
-		"S_FIN_INTER_PARTY_MATCH": "raw",
-		"S_OTHER_USER_APPLY_PARTY": 1,
-		"S_REQUEST_CONTRACT": 1,
-		"S_USER_STATUS": 3,
-		"S_WHISPER": 2
-	}
+  "files": {
+    "index.js": "f9037f0323c83e87689c0834a67d079fad917a0433850ace1890c45a496f015b",
+    "module.json": "4170d89bc5fecbae0737b50fc1f40686c5d90560f9d2a073addf9042bb9427f0",
+    "settings_migrator.js": "1d4cbc95b2bc208401775423f7afff622cb19313a5e4b9887a3d15b6bc6a0187"
+  },
+  "defs": {
+    "S_BATTLE_FIELD_ENTRANCE_INFO": "raw",
+    "S_BEGIN_THROUGH_ARBITER_CONTRACT": 1,
+    "S_CHAT": 2,
+    "S_FIN_INTER_PARTY_MATCH": "raw",
+    "S_OTHER_USER_APPLY_PARTY": 1,
+    "S_REQUEST_CONTRACT": 1,
+    "S_USER_STATUS": 3,
+    "S_WHISPER": 2
+  }
 }
